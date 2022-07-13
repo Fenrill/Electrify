@@ -1,0 +1,472 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "flex-layout.row#faq"
+    ]
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq-custom"
+    },
+    "children": [
+      "flex-layout.col#faq"
+    ]
+  },
+
+  "flex-layout.col#faq": {
+    "children": [
+      "rich-text#faq",
+      "disclosure-layout-group#group"
+    ]
+  },
+  "rich-text#faq":{
+    "props":{
+      "text": "## Preguntas Frecuentes",
+      "blockClass": "privacidad-title"
+    }
+  },
+  "disclosure-layout-group#group":{
+    "children": [
+      "disclosure-layout#1",
+      "disclosure-layout#2",
+      "disclosure-layout#3",
+      "disclosure-layout#4",
+      "disclosure-layout#5",
+      "disclosure-layout#6",
+      "disclosure-layout#7",
+      "disclosure-layout#8",
+      "disclosure-layout#9",
+      "disclosure-layout#10",
+      "disclosure-layout#11",
+      "disclosure-layout#12",
+      "disclosure-layout#13",
+      "disclosure-layout#14",
+      "disclosure-layout#15",
+      "disclosure-layout#16",
+      "disclosure-layout#17",
+      "disclosure-layout#18",
+      "disclosure-layout#19"
+    ]
+  },
+
+  "disclosure-layout#1": {
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question1"]
+  },
+  "disclosure-content#first": {
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "¿POR QUÉ ES IMPORTANTE REGISTRARME EN ELECTRIFY.COM?"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "Al registrarte tendrás un sinfín de beneficios: Tus compras serán aún más rápidas, será sencillo guardar tus direcciones para envíos y facturas, podrás elegir tu forma de pago favorito y le darás un seguimiento puntual a tu pedido, desde el momento de compra hasta que llegue a su destino. Además, encontrarás una extensa variedad de artículos deportivos a un solo clic. ¡Regístrate y vive la experiencia marti.mx! y entérate de promociones de tu deporte favorito antes que nadie. Da clic en bienvenido y listo."
+    }
+  },
+
+  "disclosure-layout#2": {
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question2"]
+  },
+  "disclosure-content#second": {
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "¿QUÉ DATOS REQUIERO PARA DARME DE ALTA EN LA PLATAFORMA DE ELECTRIFY.COM?"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+
+  "disclosure-layout#3": {
+    "children": ["disclosure-trigger#3", "disclosure-content#3"]
+  },
+  "disclosure-trigger#3": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question3"]
+  },
+  "disclosure-content#3": {
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "¿QUÉ BENEFICIOS OBTENGO COMO MIEMBRO?"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#4": {
+    "children": ["disclosure-trigger#4", "disclosure-content#4"]
+  },
+  "disclosure-trigger#4": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question4"]
+  },
+  "disclosure-content#4": {
+    "children": ["rich-text#answer4"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "¿QUÉ DEBO HACER PARA REALIZAR UNA COMPRA?"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#5": {
+    "children": ["disclosure-trigger#5", "disclosure-content#5"]
+  },
+  "disclosure-trigger#5": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question5"]
+  },
+  "disclosure-content#5": {
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question5": {
+    "props": {
+      "text": "¿CUÁLES SON LAS FORMAS DE PAGO QUE PUEDO UTILIZAR?"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#6": {
+    "children": ["disclosure-trigger#6", "disclosure-content#6"]
+  },
+  "disclosure-trigger#6": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question6"]
+  },
+  "disclosure-content#6": {
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "¿ES SEGURO COMPRAR EN ELECTRIFY.COM?"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#7": {
+    "children": ["disclosure-trigger#7", "disclosure-content#7"]
+  },
+  "disclosure-trigger#7": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question7"]
+  },
+  "disclosure-content#7": {
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "¿POR QUÉ ES NECESARIO INGRESAR DOS DIRECCIONES?"
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#8": {
+    "children": ["disclosure-trigger#8", "disclosure-content#8"]
+  },
+  "disclosure-trigger#8": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question8"]
+  },
+  "disclosure-content#8": {
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "¿CÓMO SÉ QUE MI PEDIDO FUE APROBADO?"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#9": {
+    "children": ["disclosure-trigger#9", "disclosure-content#9"]
+  },
+  "disclosure-trigger#9": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question5"]
+  },
+  "disclosure-content#9": {
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question9": {
+    "props": {
+      "text": "¿QUÉ COSTO TIENE EL ENVÍO DE MI PEDIDO?"
+    }
+  },
+  "rich-text#answer9": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#10": {
+    "children": ["disclosure-trigger#10", "disclosure-content#10"]
+  },
+  "disclosure-trigger#10": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question10"]
+  },
+  "disclosure-content#10": {
+    "children": ["rich-text#answer10"]
+  },
+  "rich-text#question10": {
+    "props": {
+      "text": "¿CUÁL ES EL PLAZO DE ENTREGA DE MI PEDIDO?"
+    }
+  },
+  "rich-text#answer10": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#11": {
+    "children": ["disclosure-trigger#11", "disclosure-content#11"]
+  },
+  "disclosure-trigger#11": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question11"]
+  },
+  "disclosure-content#11": {
+    "children": ["rich-text#answer11"]
+  },
+  "rich-text#question11": {
+    "props": {
+      "text": "¿CÓMO PUEDO DAR SEGUIMIENTO A MI PEDIDO?"
+    }
+  },
+  "rich-text#answer11": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#12": {
+    "children": ["disclosure-trigger#12", "disclosure-content#12"]
+  },
+  "disclosure-trigger#12": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question12"]
+  },
+  "disclosure-content#12": {
+    "children": ["rich-text#answer12"]
+  },
+  "rich-text#question12": {
+    "props": {
+      "text": "¿ES POSIBLE COMPRAR POR TELÉFONO?"
+    }
+  },
+  "rich-text#answer12": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#13": {
+    "children": ["disclosure-trigger#13", "disclosure-content#13"]
+  },
+  "disclosure-trigger#13": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question13"]
+  },
+  "disclosure-content#13": {
+    "children": ["rich-text#answer13"]
+  },
+  "rich-text#question13": {
+    "props": {
+      "text": "¿QUÉ PASA SI NO TENGO TARJETA DE CRÉDITO Y DÉBITO PARA COMPRAR?"
+    }
+  },
+  "rich-text#answer13": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#14": {
+    "children": ["disclosure-trigger#14", "disclosure-content#14"]
+  },
+  "disclosure-trigger#14": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question14"]
+  },
+  "disclosure-content#14": {
+    "children": ["rich-text#answer14"]
+  },
+  "rich-text#question14": {
+    "props": {
+      "text": "¿CÓMO PUEDO CAMBIAR EL ARTÍCULO COMPRADO?"
+    }
+  },
+  "rich-text#answer14": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#15": {
+    "children": ["disclosure-trigger#15", "disclosure-content#15"]
+  },
+  "disclosure-trigger#15": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question15"]
+  },
+  "disclosure-content#15": {
+    "children": ["rich-text#answer15"]
+  },
+  "rich-text#question15": {
+    "props": {
+      "text": "¿CÓMO CANCELO MI PEDIDO?"
+    }
+  },
+  "rich-text#answer15": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#16": {
+    "children": ["disclosure-trigger#16", "disclosure-content#16"]
+  },
+  "disclosure-trigger#16": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question16"]
+  },
+  "disclosure-content#16": {
+    "children": ["rich-text#answer16"]
+  },
+  "rich-text#question16": {
+    "props": {
+      "text": "¿QUÉ PASA SI NO HAY QUIEN RECIBA MI PEDIDO?"
+    }
+  },
+  "rich-text#answer16": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#17": {
+    "children": ["disclosure-trigger#17", "disclosure-content#17"]
+  },
+  "disclosure-trigger#17": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question17"]
+  },
+  "disclosure-content#17": {
+    "children": ["rich-text#answer17"]
+  },
+  "rich-text#question17": {
+    "props": {
+      "text": "¿POR QUÉ DEBO INGRESAR EL NOMBRE DE 3 PERSONAS?"
+    }
+  },
+  "rich-text#answer17": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#18": {
+    "children": ["disclosure-trigger#18", "disclosure-content#18"]
+  },
+  "disclosure-trigger#18": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question18"]
+  },
+  "disclosure-content#18": {
+    "children": ["rich-text#answer18"]
+  },
+  "rich-text#question18": {
+    "props": {
+      "text": "¿CÓMO OBTENGO MI FACTURA ELECTRÓNICA?"
+    }
+  },
+  "rich-text#answer18": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#19": {
+    "children": ["disclosure-trigger#19", "disclosure-content#19"]
+  },
+  "disclosure-trigger#19": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question19"]
+  },
+  "disclosure-content#19": {
+    "children": ["rich-text#answer19"]
+  },
+  "rich-text#question19": {
+    "props": {
+      "text": "¿QUÉ SON MIS PREFERENCIAS DENTRO DE MI PERFIL?"
+    }
+  },
+  "rich-text#answer19": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  },
+
+  "disclosure-layout#20": {
+    "children": ["disclosure-trigger#20", "disclosure-content#20"]
+  },
+  "disclosure-trigger#20": {
+    "props":{ "blockClass" : "faq-title" },
+    "children": ["rich-text#question20"]
+  },
+  "disclosure-content#20": {
+    "children": ["rich-text#answer20"]
+  },
+  "rich-text#question20": {
+    "props": {
+      "text": "¿CUÁLES SON LOS MÉTODOS DE PAGO DISPONIBLES?"
+    }
+  },
+  "rich-text#answer20": {
+    "props": {
+      "text": "Consequat ad amet magna ut ex officia dolore deserunt incididunt ea."
+    }
+  }
+}

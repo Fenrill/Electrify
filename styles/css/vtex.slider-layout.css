@@ -9,6 +9,22 @@
   max-width: 1520px;
 }
 
+.sliderTrackContainer--carousel{
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.paginationDot{
+  width: 48px!important;
+  height: 7px!important;
+  border-radius: 0;
+  background-color: #E6EFFF;
+}
+
+.paginationDot--isActive{
+  background-color: #1E4BA8;
+}
+
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -20,8 +36,168 @@
   max-width: 96rem;
 }
 
+
+.sliderTrackContainer--shelf{
+  max-width: 1720px!important;
+}
+
 .slide--shelf {
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+}
+
+.slideChildrenContainer--shelf{
+  /* background-color: #F7F9FC; */
+  height: 540px;
+  transition: all 250ms ease-in-out;
+  border-radius: 10px;
+  border: 0.5px solid transparent;
+}
+
+.slideChildrenContainer--shelf:hover{
+  background-color: transparent;
+  transition: border 250ms ease-in-out;
+  border: 0.5px solid #bfbfbf;
+}
+
+.slideChildrenContainer--shelf :global(.vtex-product-summary-2-x-container){
+  max-width: 370px!important;
+}
+
+.sliderLayoutContainer--shelf{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sliderLayoutContainer{
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.sliderTrackContainer--brand-1,
+.sliderTrackContainer--brand-2,
+.sliderTrackContainer--brand-3,
+.sliderTrackContainer--brand-4,
+.sliderTrackContainer--brand-5{
+  max-width: 1720px;
+}
+
+.slideChildrenContainer--brand-1 :global(.vtex-product-summary-2-x-container),
+.slideChildrenContainer--brand-2 :global(.vtex-product-summary-2-x-container),
+.slideChildrenContainer--brand-3 :global(.vtex-product-summary-2-x-container),
+.slideChildrenContainer--brand-4 :global(.vtex-product-summary-2-x-container),
+.slideChildrenContainer--brand-5 :global(.vtex-product-summary-2-x-container){
+  background-color: #FFFFFF;
+  margin: 0 5px;
+  padding: 20px;
+  max-width: 100%!important;
+  border-radius: 0;
+}
+
+/* .slideChildrenContainer--brand-1 :global(.vtex-product-price-1-x-savingssummaryMainIluminacionled)
+.slideChildrenContainer--brand-2 :global(.vtex-product-price-1-x-savings)
+.slideChildrenContainer--brand-3 :global(.vtex-product-price-1-x-savings)
+.slideChildrenContainer--brand-4 :global(.vtex-product-price-1-x-savings)
+.slideChildrenContainer--brand-5 :global(.vtex-product-price-1-x-savings){
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+  background-color: #FF4947;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 3px 13px;
+  border-radius: 2px;
+} */
+
+.slide--brand-1 :global(.vtex-product-summary-2-x-brandName),
+.slide--brand-2 :global(.vtex-product-summary-2-x-brandName),
+.slide--brand-3 :global(.vtex-product-summary-2-x-brandName),
+.slide--brand-4 :global(.vtex-product-summary-2-x-brandName),
+.slide--brand-5 :global(.vtex-product-summary-2-x-brandName){
+  font-size: 14px;
+  color: #000000;
+}
+
+.slide--brand-1 :global(.vtex-product-price-1-x-sellingPriceValue),
+.slide--brand-2 :global(.vtex-product-price-1-x-sellingPriceValue),
+.slide--brand-3 :global(.vtex-product-price-1-x-sellingPriceValue),
+.slide--brand-4 :global(.vtex-product-price-1-x-sellingPriceValue),
+.slide--brand-5 :global(.vtex-product-price-1-x-sellingPriceValue){
+  font-size: 20px;  
+}
+
+.slide--brand-1 :global(.vtex-product-price-1-x-listPriceValue),
+.slide--brand-2 :global(.vtex-product-price-1-x-listPriceValue),
+.slide--brand-3 :global(.vtex-product-price-1-x-listPriceValue),
+.slide--brand-4 :global(.vtex-product-price-1-x-listPriceValue),
+.slide--brand-5 :global(.vtex-product-price-1-x-listPriceValue){
+  font-size: 14px;
+  align-self: center;
+}
+
+.slide--brand-1 :global(.vtex-store-components-3-x-productBrandName),
+.slide--brand-2 :global(.vtex-store-components-3-x-productBrandName),
+.slide--brand-3 :global(.vtex-store-components-3-x-productBrandName),
+.slide--brand-4 :global(.vtex-store-components-3-x-productBrandName),
+.slide--brand-5 :global(.vtex-store-components-3-x-productBrandName){
+  text-transform: uppercase;
+  color: #1E4BA8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide--brand-1 :global(.vtex-store-components-3-x-productBrandName):hover,
+.slide--brand-2 :global(.vtex-store-components-3-x-productBrandName):hover,
+.slide--brand-3 :global(.vtex-store-components-3-x-productBrandName):hover,
+.slide--brand-4 :global(.vtex-store-components-3-x-productBrandName):hover,
+.slide--brand-5 :global(.vtex-store-components-3-x-productBrandName):hover{
+  font-weight: 600;
+}
+
+.sliderLeftArrow--brand-1,
+.sliderLeftArrow--brand-2,
+.sliderLeftArrow--brand-3,
+.sliderLeftArrow--brand-4,
+.sliderLeftArrow--brand-5{
+  padding: 16px;
+  background-color: #FFFFFF!important;
+  border-radius: 100px;
+  box-shadow: 0px 3px 6px #b1afaf;
+  color: #1E4BA8;
+  position: absolute;
+  left: -30px;
+}
+
+.sliderRightArrow--brand-1,
+.sliderRightArrow--brand-2,
+.sliderRightArrow--brand-3,
+.sliderRightArrow--brand-4,
+.sliderRightArrow--brand-5{
+  padding: 16px;
+  background-color: #FFFFFF!important;
+  border-radius: 100px;
+  box-shadow: 0px 3px 6px #b1afaf;
+  color: #1E4BA8;
+  position: absolute;
+  right: -30px;
+}
+
+@media screen and (max-width: 1768px){
+  .sliderRightArrow--brand-1,
+  .sliderRightArrow--brand-2,
+  .sliderRightArrow--brand-3,
+  .sliderRightArrow--brand-4,
+  .sliderRightArrow--brand-5{
+    right: 0;
+  }
+
+  .sliderLeftArrow--brand-1,
+  .sliderLeftArrow--brand-2,
+  .sliderLeftArrow--brand-3,
+  .sliderLeftArrow--brand-4,
+  .sliderLeftArrow--brand-5{
+    left: 0;
+  }
 }

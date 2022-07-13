@@ -1,0 +1,32 @@
+{
+    "store.custom#entrega":{
+        "children":[
+            "flex-layout.row#entrega"
+        ]
+    },
+
+    "flex-layout.row#entrega":{
+        "props":{
+            "blockClass":"entrega"
+        },
+        "children":["flex-layout.col#entrega-col"]
+    },
+    "flex-layout.col#entrega-col":{
+        "children":[
+            "rich-text#entrega-title",
+            "rich-text#entrega-text"
+        ]
+    },
+    "rich-text#entrega-title":{
+        "props":{
+            "font":"t-heading-5",
+            "text":"##### Condiciones de entrega",
+            "blockClass":"entrega-title"
+        }
+    },
+    "rich-text#entrega-text":{
+        "props":{
+            "text":"Estimado Cliente:\n-Es importante validar el domicilio de entrega que capturaste, ya que no será posible hacer ningún cambio una vez generada la orden.\n\n-En caso de aplicar, deberás poner una referencia del domicilio o lugar de entrega, para agilizar la entrega y mejorar la experiencia de compra.\n\n-Los tiempos de entrega empezaran una vez confirmada su compra.\n\nEnvío Gratis\nA. La entrega de los productos se realizarán de Lunes a viernes en un horario de 9:00 a 20:00 hrs, no se hacen entregas en días festivos. Esto aplicará para todos los productos\n\nB. El tiempo de entrega es de 8 a 10 días hábiles en productos de textil y calzado a partir de la confirmación de tu pedido. El tiempo de entrega es de 10 a 15 días hábiles en Big Ticket, una vez confirmado el pago del mismo.\n\nC. Podrás checar los horarios de entrega con el proveedor de mensajería que viene en tu confirmación de compra.\n\nMismo Día\nA. La entrega de los productos se realizarán el mismo día de la compra, en pedidos realizados antes de las 11:30 am de lunes a viernes, con un máximo 2 artículos por pedido. Para evitar contratiempos, asegúrate de que haya alguien presente para recibir tu producto. ¡No desaproveches la oportunidad de estrenar el mismo día!\n\nB. Los productos catalogados como Big Ticket, no aplican para este servicio de entrega.\n\nC. Los productos con la leyenda “Vendido por”… son productos vendidos en los canales digitales de Martí bajo el esquema de Marketplace, PARA ESTOS PRODUCTOS NO ESTA DISPONIBLE ESTE METODO DE ENTREGA.\n\nDía Siguiente\nA. La entrega de los productos se realizarán el día siguiente de la compra, aplicará en los productos catalogados como textiles, calzados y accesorios, en pedidos realizados durante las 00:00 hrs a las 23:59 hrs de domingo a Jueves, con un máximo 2 artículos por pedido. Para evitar contratiempos, asegúrate de que haya alguien presente para recibir tu producto. ¡No desaproveches la oportunidad de estrenar lo antes posible!\n\nB. Los productos catalogados como Big Ticket, no aplican para este servicio de entrega.\n\nC. Los productos con la leyenda “Vendido por”… son productos vendidos en los canales digitales de Martí bajo el esquema de Marketplace, PARA ESTOS PRODUCTOS NO ESTA DISPONIBLE ESTE METODO DE ENTREGA.\n\nEntrega no exitosa\nA. En caso de que no sea exitosa la entrega por parte de la mensajería, te contactaremos vía telefónica y por correo electrónico para acordar una nueva fecha de envío de tu producto.\n\nB. Si por segunda ocasión resulta no exitoso, estará disponible en la sucursal del proveedor de mensajería con servicio más cercana al domicilio de entrega, por los días hábiles que tengan establecidos; transcurrido ese tiempo comenzará el proceso de devolución del dinero a tu mismo método de pago con el que realizaste la compra.\n\nEnvío especial\nA. Para la entrega de los productos Big Ticket (Caminadoras, Bicicletas, Elipticas, Trampolines, Tablas de Inversión y Gimnasios, etc.), nuestro equipo de Call Center se pondrá en contacto contigo para agendar la entrega del equipo y al mismo tiempo de asesorarte para la garantía del mismo.\n\nB. Para conocer mayor detalle sobre las condiciones de entrega y servicio de armado de Aparatos de Ejercicio y Mesas de Ping Pong, llámanos sin costo al (55) 4170-3471 en la Ciudad de México o al 01 800 062 3319 desde el interior de la República mexicana.\n\nProducto de venta en modalidad Marketplace\nA. Los productos vendidos en el esquema de Marketplace IN Electrify se identifican como los productos que contengan la leyenda “vendido y enviado por…”, estos productos solo dispondrán del tipo de entrega o tipo de envió estándar, para este tipo de productos no se dispone de tipo de entrega día siguiente o mismo día.\n\nB. En caso de una entrega no exitosa se procederá como se estipula en el apartado “Entrega no exitosa”\n\nC. En caso de productos que ameriten envió especial se procederá conforme al apartado “envió especial”"
+        }
+    }
+}

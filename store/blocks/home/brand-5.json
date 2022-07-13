@@ -1,0 +1,94 @@
+{
+    "flex-layout.row#shelf-brand-5":{
+        "props":{"blockClass":"shelf-brand-5"},
+        "children": ["list-context.product-list#brand-5"]
+    },
+    "list-context.product-list#brand-5": {
+      "props":{
+        "collection":"141",
+        "maxItems": 12,
+        "orderBy":"OrderByTopSaleDESC"
+      },
+      "blocks": ["product-summary.shelf#brand-5"],
+      "children":["slider-layout#brand-5"]
+    },
+  
+    "product-summary.shelf#brand-5": {
+      "children": [
+        "product-summary-image",
+        "vtex.product-highlights@2.x:product-highlights",
+        "add-to-list-btn",
+        "vtex.store-components:product-brand",
+        "product-summary-name",
+        "flex-layout.row#selling_price_brand_5",
+        "product-summary-sku-selector"
+      ]
+    },
+    "product-summary-image":{
+      "props":{
+        "showBadge":false
+      }
+    },
+    "flex-layout.row#selling_price_brand_5":{
+      "props":{
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4,
+        "blockClass": "summarybrand-5Savings"
+      },
+      "children":[
+        "product-selling-price#summarybrand-5",
+        "product-list-price",
+        "product-price-savings#summarybrand-5"
+        
+      ]
+    },
+    "flex-layout.row#selling-price-main":{
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+      ]
+    },
+    "vtex.store-components:product-brand": {
+      "props": {
+        "displayMode": "text",
+        "withLink":"text"
+      }
+    },
+    "add-to-cart-button#brand-5":{
+      "props":{
+        "text":"Agregar al Carrito"
+      }
+    },
+  
+    "slider-layout#brand-5": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 3,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "brand-5"
+      }
+    },
+    "product-selling-price#summarybrand-5":{
+      "props":{
+        "blockClass": "priceSummarybrand-5"
+      }
+    },
+    "product-price-savings#summarybrand-5": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summarybrand-5"
+      }
+    }
+  }

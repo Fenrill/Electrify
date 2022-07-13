@@ -1,0 +1,109 @@
+{
+    "flex-layout.row#iluminacionled":{
+      "props":{
+        "blockClass":"iluminacionledShelf"
+      },
+      "children":[
+        "flex-layout.col#iluminacionled"
+      ]
+    },
+    "flex-layout.col#iluminacionled":{
+      "props":{"blockClass":"iluminacionledColShelf"},
+      "children":[
+        "list-context.product-list#iluminacionled"
+      ]
+    },
+    "rich-text#iluminacionled":{
+      "props": {
+        "text": "## ILUMINACIÓN LED",
+        "blockClass": "iluminacionledTitle"
+      }
+    },
+    "list-context.product-list#iluminacionled": {
+      "props":{
+        "collection":"145",
+        "maxItems": 12,
+        "orderBy":"OrderByTopSaleDESC"
+      },
+      "blocks": ["product-summary.shelf#iluminacionled"],
+      "children":["slider-layout#iluminacionled"]
+    },
+  
+    "product-summary.shelf#iluminacionled": {
+      "children": [
+        "product-summary-image#iluminacionled",
+        "add-to-list-btn",
+        "vtex.store-components:product-brand#iluminacionled",
+        "product-summary-name",
+        "flex-layout.row#selling_price",
+        "product-summary-sku-selector"
+      ]
+    },
+    "product-summary-image#iluminacionled":{
+      "props":{
+        "showBadge":false
+      }
+    },
+    "flex-layout.row#selling_price":{
+      "props":{
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4,
+        "blockClass": "summaryIluminacionledSavings"
+      },
+      "children":[
+        "product-selling-price#iluminacionledsummaryMain",
+        "product-list-price",
+        "product-price-savings#iluminacionledsummaryMain"
+        
+      ]
+    },
+    "flex-layout.row#selling-price-main":{
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+      ]
+    },
+    "vtex.store-components:product-brand#iluminacionled": {
+      "props": {
+        "displayMode": "text",
+        "withLink":"text"
+      }
+    },
+    "add-to-cart-button#iluminacionled":{
+      "props":{
+        "text":"Agregar al Carrito"
+      }
+    },
+  
+    "slider-layout#iluminacionled": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
+    "product-selling-price#iluminacionledsummaryMain":{
+      "props":{
+        "blockClass": "priceSummaryMain"
+      }
+    },
+    "product-price-savings#iluminacionledsummaryMain": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summaryMainIluminacionled"
+      }
+    }
+  }

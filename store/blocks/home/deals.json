@@ -19,13 +19,13 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "src": "assets/icons/metodos- pago.svg",
+      "maxHeight": "73px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "### Métodos de Pago\nPaga con tarjeta, débito o efectivo. También puedes pagar en hasta 12 mensualidades.",
       "blockClass": "deals"
     }
   },
@@ -37,13 +37,13 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "src": "assets/icons/envios.svg",
+      "maxHeight": "70px"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "### Envíos a todo el País\nCorremos por ti de manera confiable y segura",
       "blockClass": "deals"
     }
   },
@@ -55,13 +55,13 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "src": "assets/icons/inventario.svg",
+      "maxHeight": "89px"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "### Inventario\nContamos con un gran portafolio de produtos en todas las categorías",
       "blockClass": "deals"
     }
   },
@@ -73,13 +73,13 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "src": "assets/icons/compra-segura.svg",
+      "maxHeight": "81px"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "### Compra segura\nGarantizamos transacciones seguras a través de nuestros métodos de pago certificados por nuestros convenios bancarios.",
       "blockClass": "deals"
     }
   }

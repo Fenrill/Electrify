@@ -1,0 +1,121 @@
+{
+    "store.custom#metodos":{
+        "children":["flex-layout.row#metodos"]
+    },
+    "flex-layout.row#metodos":{
+        "props":{"blockClass":"metodos"},
+        "children":[
+            "flex-layout.col#metodos-col"
+        ]
+    },
+    "flex-layout.col#metodos-col":{
+        "children":[
+            "rich-text#metodos-title",
+            "rich-text#metodos-text1",
+            "flex-layout.row#metodos-cards1",
+            "flex-layout.row#metodos-cards2",
+            "rich-text#promociones-exclusivas",
+            "rich-text#metodos-cards-text2",
+            "rich-text#ventas-atencion"
+        ]
+    },
+    "rich-text#metodos-title":{
+        "props":{
+            "text":"##### Métodos de pago"
+        }
+    },
+    "rich-text#metodos-text1":{
+        "props":{
+            "text":"Para tu comodidad, ponemos a tu disposición los siguientes métodos de pago:"
+        }
+    },
+
+    "flex-layout.row#metodos-cards1":{
+        "props":{"blockClass":"metodos-cards1"},
+        "children":[
+            "flex-layout.col#metodos-cards-1",
+            "flex-layout.col#metodos-cards-2"
+        ]
+    },
+    "flex-layout.row#metodos-cards2":{
+        "props":{"blockClass":"metodos-cards2"},
+        "children":[
+            // "flex-layout.col#metodos-cards-3",
+            // "flex-layout.col#metodos-cards-4"
+        ]
+    },
+
+    "flex-layout.col#metodos-cards-1":{
+        "props":{"blockClass":"metodos-cards-square1"},
+        "children":[
+            "image#paypal-metodos"
+        ]
+    },
+    "image#paypal-metodos":{
+        "props": {
+            "blockClass":"metodos-cards-paypal",
+            "src": "assets/icons/paypal-full.svg", 
+            "maxHeight": 52
+        }
+    },
+    "flex-layout.col#metodos-cards-2":{
+        "props":{"blockClass":"metodos-cards-square2"},
+        "children":[
+            "image#cards",
+            "rich-text#metodos-cards-text1",
+            "flex-layout.row#metodos-cards-inner-images"
+        ]
+    },
+    "image#cards":{
+        "props": {
+            "src": "assets/icons/metodos- pago.svg",
+            "maxHeight": 73
+        }
+    },
+    "rich-text#metodos-cards-text1":{
+        "props":{
+            "text":"Tarjetas de crédito y débito, Visa y MasterCard emitidas en la República Mexicana."
+        }
+    },
+    "flex-layout.row#metodos-cards-inner-images":{
+        "props":{
+            "blockClass":"metodos-cards-inner-images"
+        },
+        "children":[
+            "image#metodos-cards-inner-images1",
+            "image#metodos-cards-inner-images2"
+        ]
+    },
+    "image#metodos-cards-inner-images1":{
+        "props": {
+            "blockClass":"metodos-cards-mastercard",
+            "src": "assets/icons/mastercard.svg",
+            "maxHeight": 40
+        }
+    },
+    "image#metodos-cards-inner-images2":{
+        "props": {
+            "blockClass":"metodos-cards-visa",
+            "src": "assets/icons/VISA.svg",
+            "maxHeight": 40
+        }
+    },
+    "rich-text#promociones-exclusivas": {
+        "props":{
+            "blockClass":"promociones-exclusivas",
+            "text":"Promociones Exclusivas"
+        }
+    },
+    "rich-text#metodos-cards-text2": {
+        "props":{
+            "blockClass":"metodos-cards-text2",
+            "text":"¿Tienes alguna duda sobre el proceso de compra o métodos de pago?\n\nMárcanos al Centro de Atención a Clientes. Con gusto te atenderemos."
+        }
+    },
+    "rich-text#ventas-atencion": {
+        "props":{
+            "blockClass":"ventas-atencion",
+            "text":"55 6623 2312\nVentas y atención"
+        }
+    }
+}

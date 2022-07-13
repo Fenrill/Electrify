@@ -1,0 +1,13 @@
+.label{
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.profileIcon{
+    width: 25px!important;
+    background-color: #E6EFFF;
+    padding: 5px;
+    border-radius: 20px;
+    color: #1E4BA8;
+}

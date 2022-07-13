@@ -1,0 +1,85 @@
+{
+    "store.custom#cambios-devoluciones":{
+        "children":[
+            "flex-layout.row#cambios-devoluciones"
+        ]
+    },
+    "flex-layout.row#cambios-devoluciones":{
+        "props":{"blockClass":"cambios-devoluciones"},
+        "children":["flex-layout.col#cambios-devoluciones-col"]
+    },
+    "flex-layout.col#cambios-devoluciones-col":{
+        "children":[
+            "rich-text#cambios-title",
+            "rich-text#cambios-texto",
+            "flex-layout.row#cambios-row-1",
+            "flex-layout.row#cambios-row-2"
+        ]
+    },
+    "rich-text#cambios-title":{
+        "props":{
+            "text": "## Política de cambios y/o devoluciones electrify.com",
+            "blockClass": "cambios-title"
+        }
+    },
+    "rich-text#cambios-texto":{
+        "props":{
+            "text":"Según nuestra política de devoluciones, cualquier artículo que desee devolver deberá ser devuelto a nuestro almacén. Por favor, siga éstos pasos:\n\n1.    Se aceptarán devoluciones dentro de las 4 primeras semanas de compra de aquellos artículos que estén sin usar y con el packaging sin dañar. Pasadas 4 semanas desde que el producto fue despachado, podrán ser aceptados sólo cambios, a no ser que la pieza esté defectuosa y cargos de realmacenamiento podrían ser aplicados en ciertos productos.\n\n2.    Envíe un correo electrónico a: ventaenlinea@elektron.com.mx indicando el número de referencia de su pedido (p.ej., xxxx), el motivo de la devolución y si prefiere cambiar el artículo por otro nuevo o que se le devuelva el dinero.\n\n3.    Nuestro departamento de servicio de atención al cliente le enviará un mensaje con el número de autorización para devolución.\n\n4.    Envíe el artículo que desee devolver con el número de folio escrito claramente en el embalaje exterior a la siguiente dirección: xxxx\n\n5.    Una vez hayamos recibido el artículo, le reembolsaremos o le enviaremos un reemplazo. Si el error en la compra o el defecto del producto depende de Elektron Materiales Eléctricos, podemos reembolsar los gastos de envío hasta un máximo de €10. Para obtener éste reembolso es necesario contestar al correo que indica el número de folio adjuntando una copia escaneada del comprobante de envío.\n\n¿No te quedó, no era tu estilo o no fue el artículo que compraste? Para hacer un cambio o devolución, te dejamos las siguientes opciones:"
+        }
+    },
+
+    "flex-layout.row#cambios-row-1":{
+        "props":{
+            "colSizing":"auto",
+            "blockClass":"cambios-square1"
+        },
+        "children":[
+            "rich-text#cambios-texto-card",
+            "flex-layout.col#cambios-phone"
+        ]
+    },
+    "rich-text#cambios-texto-card":{
+        "props":{
+            "blockClass":"cambios-texto-card-title",
+            "text":"##### Ayuda telefónica\n\nAquí puedes reportar una entrega no reconocida, cambio o devolución de tu producto cuentas con 48 horas para hacerlo. Comunícate con nosotros al (55) 8947-0345, y un especialista te atenderá o simplemente déjanos tus datos para iniciar con el proceso."
+        }
+    },
+    "flex-layout.col#cambios-phone":{
+        "props":{"blockClass":"cambios-phone-boton"},
+        "children":["rich-text#phone-text"]
+    },
+    "rich-text#phone-text":{
+        "props":{
+            "text":"Llámanos",
+            "blockClass":"phone-icon-text"
+        }
+    },
+
+
+    "flex-layout.row#cambios-row-2":{
+        "props":{
+            "colSizing":"auto",
+            "blockClass":"cambios-square2"
+        },
+        "children":[
+            "rich-text#cambios-texto-card-2",
+            "flex-layout.col#cambios-phone-2"
+        ]
+    },
+    "rich-text#cambios-texto-card-2":{
+        "props":{
+            "blockClass":"cambios-texto-card-title",
+            "text":"##### Ayuda por correo electrónico\n\nEnvianos un correo a experienciamarti@marti.com.mx con los siguientes datos:\n\nAsunto: Escribe “Cambio o Devolución” según sea tu caso.\nCuerpo del mensaje: Breve descripción del problema que tuviste con tu producto.\n\nEnseguida te contactaremos para continuar con tu proceso."
+        }
+    },
+    "flex-layout.col#cambios-phone-2":{
+        "props":{"blockClass":"cambios-phone-boton"},
+        "children":["rich-text#phone-text-2"]
+    },
+    "rich-text#phone-text-2":{
+        "props":{
+            "text":"Enviar Correo",
+            "blockClass":"mail-icon-text"
+        }
+    }
+}

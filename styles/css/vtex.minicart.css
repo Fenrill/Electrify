@@ -1,0 +1,8 @@
+.cartIcon{
+    width: 25px!important;
+    color: #1E4BA8;
+}
+
+.minicartContainer :global(.vtex-button){
+    background-color: transparent;
+}

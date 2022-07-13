@@ -21,7 +21,8 @@
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "marginTop": 4
+      "marginTop": 4,
+      "blockClass":"breadcrumb"
     },
     "children": ["breadcrumb"]
   },
@@ -96,25 +97,52 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass":"product-right-col"
     },
     "children": [
+      "add-to-list-btn",
+      "vtex.store-components:product-brand",
       "flex-layout.row#product-name",
+      "product-identifier.product",
+      "flex-layout.row#product-spacer",
       "product-rating-summary",
+      "vtex.product-highlights@2.x:product-highlights#pdpPromotions",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
-      "product-separator",
-      "product-identifier.product",
+      "flex-layout.row#product-spacer",
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
+      "flex-layout.row#product-spacer",
       "availability-subscriber",
       "shipping-simulator",
+      "flex-layout.row#product-spacer",
       "share#default"
     ]
+  },
+  "add-to-list-btn":{
+    "props":{"blockClass":"wish-list-btn"}
+  },
+  "vtex.product-highlights@2.x:product-highlights#pdpPromotions": {
+    "props": {
+      "type": "promotion"
+    },
+    "children": ["product-highlight-wrapper#pdpPromotions"]
+  },
+  "product-highlight-wrapper#pdpPromotions": {
+    "props": {
+      "blockClass": "promotionPDP"
+    },
+    "children": ["product-highlight-text#pdpPromotions"]
+  },
+  "product-highlight-text#pdpPromotions": {
+    "props": {
+      "message": "{highlightName}"
+    }
   },
 
   "flex-layout.row#product-name": {
@@ -134,7 +162,8 @@
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass":"buy-button"
     },
     "children": ["add-to-cart-button"]
   },
@@ -180,5 +209,12 @@
         "Pinterest": true
       }
     }
+  },
+
+  "flex-layout.row#product-spacer":{
+    "props": {
+      "blockClass": "product-spacer"
+    },
+    "children": []
   }
 }

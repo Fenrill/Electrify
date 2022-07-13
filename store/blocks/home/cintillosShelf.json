@@ -1,0 +1,109 @@
+{
+    "flex-layout.row#cintillos":{
+      "props":{
+        "blockClass":"cintillosShelf"
+      },
+      "children":[
+        "flex-layout.col#cintillos"
+      ]
+    },
+    "flex-layout.col#cintillos":{
+      "props":{"blockClass":"cintillosColShelf"},
+      "children":[
+        "list-context.product-list#cintillos"
+      ]
+    },
+    "rich-text#cintillos":{
+      "props": {
+        "text": "## CINTILLOS",
+        "blockClass": "cintillosTitle"
+      }
+    },
+    "list-context.product-list#cintillos": {
+      "props":{
+        "category":"1",
+        "maxItems": 12,
+        "orderBy":"OrderByTopSaleDESC"
+      },
+      "blocks": ["product-summary.shelf#cintillos"],
+      "children":["slider-layout#cintillos"]
+    },
+  
+    "product-summary.shelf#cintillos": {
+      "children": [
+        "product-summary-image#cintillos",
+        "add-to-list-btn",
+        "vtex.store-components:product-brand#cintillos",
+        "product-summary-name",
+        "flex-layout.row#cintillosselling_price",
+        "product-summary-sku-selector"
+      ]
+    },
+    "product-summary-image#cintillos":{
+      "props":{
+        "showBadge":false
+      }
+    },
+    "flex-layout.row#cintillosselling_price":{
+      "props":{
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4,
+        "blockClass": "summaryCintillosSavings"
+      },
+      "children":[
+        "product-selling-price#cintillossummaryMain",
+        "product-list-price",
+        "product-price-savings#cintillossummaryMain"
+        
+      ]
+    },
+    "flex-layout.row#selling-price-main":{
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+      ]
+    },
+    "vtex.store-components:product-brand#cintillos": {
+      "props": {
+        "displayMode": "text",
+        "withLink":"text"
+      }
+    },
+    "add-to-cart-button#cintillos":{
+      "props":{
+        "text":"Agregar al Carrito"
+      }
+    },
+  
+    "slider-layout#cintillos": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
+    "product-selling-price#cintillossummaryMain":{
+      "props":{
+        "blockClass": "priceSummaryMain"
+      }
+    },
+    "product-price-savings#cintillossummaryMain": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summaryMainCintillos"
+      }
+    }
+  }

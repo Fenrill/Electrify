@@ -1,0 +1,109 @@
+{
+    "flex-layout.row#apagadores":{
+      "props":{
+        "blockClass":"apagadoresShelf"
+      },
+      "children":[
+        "flex-layout.col#apagadores"
+      ]
+    },
+    "flex-layout.col#apagadores":{
+      "props":{"blockClass":"apagadoresColShelf"},
+      "children":[
+        "list-context.product-list#apagadores"
+      ]
+    },
+    "rich-text#apagadores":{
+      "props": {
+        "text": "## APAGADORES",
+        "blockClass": "apagadoresTitle"
+      }
+    },
+    "list-context.product-list#apagadores": {
+      "props":{
+        "collection":"146",
+        "maxItems": 12,
+        "orderBy":"OrderByTopSaleDESC"
+      },
+      "blocks": ["product-summary.shelf#apagadores"],
+      "children":["slider-layout#apagadores"]
+    },
+  
+    "product-summary.shelf#apagadores": {
+      "children": [
+        "product-summary-image#apagadores",
+        "add-to-list-btn",
+        "vtex.store-components:product-brand#apagadores",
+        "product-summary-name",
+        "flex-layout.row#apagadoresselling_price",
+        "product-summary-sku-selector"
+      ]
+    },
+    "product-summary-image#apagadores":{
+      "props":{
+        "showBadge":false
+      }
+    },
+    "flex-layout.row#apagadoresselling_price":{
+      "props":{
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4,
+        "blockClass": "summaryApagadoresSavings"
+      },
+      "children":[
+        "product-selling-price#apagadoressummaryMain",
+        "product-list-price",
+        "product-price-savings#apagadoressummaryMain"
+        
+      ]
+    },
+    "flex-layout.row#selling-price-main":{
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+      ]
+    },
+    "vtex.store-components:product-brand#apagadores": {
+      "props": {
+        "displayMode": "text",
+        "withLink":"text"
+      }
+    },
+    "add-to-cart-button#apagadores":{
+      "props":{
+        "text":"Agregar al Carrito"
+      }
+    },
+  
+    "slider-layout#apagadores": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
+    "product-selling-price#apagadoressummaryMain":{
+      "props":{
+        "blockClass": "priceSummaryMain"
+      }
+    },
+    "product-price-savings#apagadoressummaryMain": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summaryMainApagadores"
+      }
+    }
+  }

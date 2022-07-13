@@ -18,3 +18,11 @@
 .flexRow--productSpecification:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+.flexRow--deals{
+  background-color: #F7F9FC;
+}
+
+.flexRowContent--deals{
+  padding-top: 40px;
+}

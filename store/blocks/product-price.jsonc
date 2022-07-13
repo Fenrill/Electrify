@@ -4,15 +4,18 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass":"price-row"
     },
     "children": [
-      "product-selling-price"
+      "product-selling-price",
+      "product-price-savings"
     ]
   },
 
   "flex-layout.row#list-price-savings": {
     "props": {
+      "blockClass":"list-price",
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
@@ -20,8 +23,7 @@
       "marginTop": 5
     },
     "children": [
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price"
     ]
   }
 }

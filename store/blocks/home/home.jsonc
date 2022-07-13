@@ -1,17 +1,53 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.tablet#tablet",
+      "responsive-layout.phone#phone"
+    ]
+  },
+
+  "responsive-layout.desktop#desktop":{
+    "children":[
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      "flex-layout.row#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      // "info-card#kleins-tool",
+      "flex-layout.row#info-card-1",
+      "flex-layout.row#shelf-brand-1",
+      "flex-layout.row#info-card-2",
+      "flex-layout.row#shelf-brand-2",
+      "flex-layout.row#banner-1",
+      "flex-layout.row#info-card-3",
+      "flex-layout.row#shelf-brand-3",
+      "flex-layout.row#info-card-4",
+      "flex-layout.row#shelf-brand-4",
+      "flex-layout.row#info-card-5",
+      "flex-layout.row#shelf-brand-5",
+      "flex-layout.row#lo-mas-buscado",
+      "flex-layout.row#lo-mas-buscado-shelf",
+      "flex-layout.row#lo-mas-vendido",
+      "flex-layout.row#lo-mas-vendido-shelf",
+      "newsletter",
+      "flex-layout.row#deals"
+    ]
+  },
+  "responsive-layout.tablet#tablet":{
+    "children":[
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#info-card-1",
+      "flex-layout.row#shelf-brand-1"
+    ]
+  },
+  "responsive-layout.phone#phone":{
+    "children":[
+
     ]
   },
 
@@ -21,12 +57,12 @@
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/slides/main-slide1.jpg",
+          "mobileImage": "assets/slides/main-slide1.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/slides/main-slide2.jpg",
+          "mobileImage": "assets/slides/main-slide2.jpg"
         }
       ]
     }
@@ -43,61 +79,266 @@
       "blockClass": "carousel"
     }
   },
-
+  "flex-layout.row#shelf-title":{
+    "props":{"blockClass":"shelf-title-container"},
+    "children":["rich-text#shelf-title"]
+  },
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## OFERTAS DE LA SEMANA",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
+  "flex-layout.row#shelf":{
+    "props":{"blockClass":"tabLayoutMain"},
+    "children":["tab-layout#main"]
   },
 
-  "info-card#home": {
+  "tab-layout#main":{
+    "children": [
+        "tab-list#main",
+        "tab-content#main"
+      ],
+      "props": {
+        "blockClass": "main",
+        "defaultActiveTabId": "cablethw"
+      }
+  },
+  "tab-list#main":{
+    "props":{"blockClass":"mainTabLayout"},
+    "children":[
+      "tab-list.item#cablethw",
+      "tab-list.item#iluminacionled",
+      "tab-list.item#apagadores",
+      "tab-list.item#cintillos"
+    ]
+  },
+  "tab-list.item#cablethw":{
+    "props":{
+      "tabId":"cablethw",
+      "label":"CABLE THW",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#iluminacionled":{
+    "props":{
+      "tabId":"iluminacionled",
+      "label":"ILUMINACIÓN LED"
+    }
+  },
+  "tab-list.item#apagadores":{
+    "props":{
+      "tabId":"apagadores",
+      "label":"APAGADORES"
+    }
+  },
+  "tab-list.item#cintillos":{
+    "props":{
+      "tabId":"cintillos",
+      "label":"CINTILLOS"
+    }
+  },
+  "tab-content#main":{
+    "children":[
+      "tab-content.item#cablethw",
+      "tab-content.item#iluminacionled",
+      "tab-content.item#apagadores",
+      "tab-content.item#cintillos"
+    ]
+  },
+  "tab-content.item#cablethw":{
+    "children":[
+      "flex-layout.row#cablethw"
+      // "list-context.product-list#monitores"
+    ],
+    "props":{
+      "tabId":"cablethw"
+    }
+  },
+  "tab-content.item#iluminacionled":{
+    "children":[
+      "flex-layout.row#iluminacionled"
+    ],
+    "props":{
+      "tabId":"iluminacionled"
+    }
+  },
+  "tab-content.item#apagadores":{
+    "children":[
+      "list-context.product-list#apagadores"
+    ],
+    "props":{
+      "tabId":"apagadores"
+    }
+  },
+  "tab-content.item#cintillos":{
+    "children":[
+      "list-context.product-list#cintillos"
+    ],
+    "props":{
+      "tabId":"cintillos"
+    }
+  },
+  // "flex-layout.row#shelf": {
+  //   "children": ["list-context.product-list#demo1"]
+  // },
+  // "list-context.product-list#demo1": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "children": ["slider-layout#demo-products"],
+  //   "props": {
+  //     "orderBy": "OrderByTopSaleDESC"
+  //   }
+  // },
+  // "slider-layout#demo-products": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 5,
+  //       "tablet": 3,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "fullWidth": false,
+  //     "blockClass": "shelf"
+  //   }
+  // },
+
+  "flex-layout.row#info-card-1":{
+    "props":{"blockClass":"container-brand-1"},
+    "children":["info-card#brand-1"]
+  },
+
+  "info-card#brand-1": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "imageUrl": "assets/marcas-banner/kleintools.png",
+      "headline": " ",
+      "subhead": "Resistencia comprobada. Seguridad fiable.",
+      "callToActionMode": "link",
+      "callToActionText": "VER TODOS",
+      "callToActionUrl": "/klein-tools/d",
+      "blockClass": "info-card-kleins-tool",
+      "textAlignment": "left"
     }
   },
 
-  "rich-text#question": {
+  "flex-layout.row#info-card-2":{
+    "props":{"blockClass":"container-brand-2"},
+    "children":["info-card#brand-2"]
+  },
+
+  "info-card#brand-2": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/marcas-banner/hubbell.png",
+      "headline": " ",
+      "subhead": "Resistencia comprobada. Seguridad fiable.",
+      "callToActionMode": "link",
+      "callToActionText": "VER TODOS",
+      "callToActionUrl": "/klein-tools/d",
+      "blockClass": "info-card-brand-2",
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.row#banner-1":{
+    "props":{"blockClass":"banner-1"},
+    "children":["image#banner-1"]
+  },
+  "image#banner-1": {
+    "props": {
+      "src": "assets/banners/main-banner-1.jpg"
+    }
+  },
+  "flex-layout.row#info-card-3":{
+    "props":{"blockClass":"container-brand-3"},
+    "children":["info-card#brand-3"]
+  },
+
+  "info-card#brand-3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/marcas-banner/burndy.png",
+      "headline": " ",
+      "subhead": "Resistencia comprobada. Seguridad fiable.",
+      "callToActionMode": "link",
+      "callToActionText": "VER TODOS",
+      "callToActionUrl": "/klein-tools/d",
+      "blockClass": "info-card-brand-3",
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.row#info-card-4":{
+    "props":{"blockClass":"container-brand-4"},
+    "children":["info-card#brand-4"]
+  },
+
+  "info-card#brand-4": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/marcas-banner/tecnolite.png",
+      "headline": " ",
+      "subhead": "Resistencia comprobada. Seguridad fiable.",
+      "callToActionMode": "link",
+      "callToActionText": "VER TODOS",
+      "callToActionUrl": "/klein-tools/d",
+      "blockClass": "info-card-brand-4",
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.row#info-card-5":{
+    "props":{"blockClass":"container-brand-5"},
+    "children":["info-card#brand-5"]
+  },
+
+  "info-card#brand-5": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/marcas-banner/schneider.png",
+      "headline": " ",
+      "subhead": "Resistencia comprobada. Seguridad fiable.",
+      "callToActionMode": "link",
+      "callToActionText": "VER TODOS",
+      "callToActionUrl": "/klein-tools/d",
+      "blockClass": "info-card-brand-5",
+      "textAlignment": "left"
     }
   },
 
-  "rich-text#link": {
+  "flex-layout.row#lo-mas-buscado":{
+    "props":{"blockClass":"lo-mas-buscado"},
+    "children":["rich-text#lo-mas-buscado"]
+  },
+  "rich-text#lo-mas-buscado": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "## LO MÁS BUSCADO",
+      "blockClass": "lo-mas-buscado-text-1"
+    }
+  },
+  "flex-layout.row#lo-mas-vendido":{
+    "props":{"blockClass":"lo-mas-vendido"},
+    "children":["rich-text#lo-mas-vendido"]
+  },
+  "rich-text#lo-mas-vendido": {
+    "props": {
+      "text": "## LO MÁS VENDIDO",
+      "blockClass": "lo-mas-vendido-text-1"
+    }
+  },
+
+  "newsletter": {
+    "props":{
+      "label": "Únete a nuestro NEWSLETTER y recibe un 10% descuento",
+      "placeholder": "Ingresa tu email",
+      "submit": "SUSCRÍBETE"
     }
   }
 }

@@ -1,0 +1,142 @@
+{
+    "flex-layout.row#cablethw":{
+      "props":{
+        "blockClass":"cablethwShelf"
+      },
+      "children":[
+        "flex-layout.col#cablethw"
+      ]
+    },
+    "flex-layout.col#cablethw":{
+      "props":{"blockClass":"cablethwColShelf"},
+      "children":[
+        "list-context.product-list#cablethw"
+      ]
+    },
+    "rich-text#cablethw":{
+      "props": {
+        "text": "## CABLE THW",
+        "blockClass": "cablethwTitle"
+      }
+    },
+    "list-context.product-list#cablethw": {
+      "props":{
+        "collection":"144",
+        "maxItems": 5,
+        "orderBy":"OrderByTopSaleDESC"
+      },
+      "blocks": ["product-summary.shelf#cablethw"],
+      "children":["slider-layout#cablethw"]
+    },
+  
+    "product-summary.shelf#cablethw": {
+      "children": [
+        "product-summary-image#cablethw",
+        "vtex.product-highlights@2.x:product-highlights",
+        "add-to-list-btn",
+        "vtex.store-components:product-brand#cablethw",
+        "product-summary-name",
+        "flex-layout.row#cablethwselling_price",
+        "product-summary-sku-selector",
+        "vtex.product-highlights@2.x:product-highlights#promotions"
+      ]
+    },
+    "product-summary-image#cablethw":{
+      "props":{
+        "showBadge":false
+      }
+    },
+    "vtex.product-highlights@2.x:product-highlights": {
+      "props": {
+        "type": "collection",
+        "filter": {
+          "type": "show",
+          "highlightNames": ["Nuevo"]
+        }
+      },
+      "children": ["product-highlight-text"]
+    },
+    "product-highlight-text": {
+      "props": {
+        "message": "{highlightName}"
+      }
+    },
+    "vtex.product-highlights@2.x:product-highlights#promotions": {
+      "props": {
+        "type": "promotion",
+        "filter": {
+          "type": "show",
+          "highlightNames": ["Envio Gratis"]
+        }
+      },
+      "children": ["product-highlight-text#promotions"]
+    },
+    "product-highlight-text#promotions": {
+      "props": {
+        "message": "{highlightName}"
+      }
+    },
+
+    "flex-layout.row#cablethwselling_price":{
+      "props":{
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4,
+        "blockClass": "summaryCablethwSavings"
+      },
+      "children":[
+        "product-selling-price#cablethwsummaryMain",
+        "product-list-price",
+        "product-price-savings#cablethwsummaryMain"
+        
+      ]
+    },
+    "flex-layout.row#selling-price-main":{
+      "props": {
+        "colGap": 2,
+        "preserveLayoutOnMobile": true,
+        "preventHorizontalStretch": true,
+        "marginBottom": 4
+      },
+      "children": [
+      ]
+    },
+    "vtex.store-components:product-brand#cablethw": {
+      "props": {
+        "displayMode": "text",
+        "withLink":"text"
+      }
+    },
+    "add-to-cart-button#cablethw":{
+      "props":{
+        "text":"Agregar al Carrito"
+      }
+    },
+  
+    "slider-layout#cablethw": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
+    "product-selling-price#cablethwsummaryMain":{
+      "props":{
+        "blockClass": "priceSummaryMain"
+      }
+    },
+    "product-price-savings#cablethwsummaryMain": {
+      "props": {
+        "markers": [
+          "discount"
+        ],
+        "blockClass": "summaryMainCablethw"
+      }
+    }
+  }

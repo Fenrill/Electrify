@@ -1,0 +1,50 @@
+.listContainer--mainTabLayout{
+    position: absolute;
+    display: flex;
+    width: 700px;
+    top: -22%;
+    right: 30%;
+}
+
+.listItem :global(.vtex-button){
+    color: #335EF3;
+    background-color: transparent;
+    border-color: #335EF3;
+    border-radius: 28px;
+}
+
+.listItemActive :global(.vtex-button){
+    color: #FFFFFF;
+    background-color: #335EF3;
+    border-color: #335EF3;
+}
+
+.listItem:hover :global(.vtex-button) {
+    transition: all 0.1s ease-in-out;
+    color: #FFFFFF;
+    background-color: #335EF3;
+    border-color: #335EF3;
+    border-radius: 28px;
+}
+
+.listItem :global(.vtex-button__label){
+    padding-top: 0.25em!important;
+    padding-bottom: 0.25em!important;
+}
+
+.contentContainer{
+    min-height: 540px;
+}
+
+@media screen and (max-width: 1600px){
+    .listContainer--mainTabLayout{
+        top: -22%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .listContainer--mainTabLayout{
+        right: 10%;
+    }
+}

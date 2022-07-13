@@ -1,11 +1,11 @@
 .listPrice {
-  color: #727273;
+  color: #727273!important;
   margin-bottom: .25rem;
   font-size: 1rem;
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #FF4947!important;
   font-size: 1.25rem;
 }
 
@@ -77,3 +77,43 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+/* Custom CSS */
+.savings--summaryMainCablethw, .savings{
+  position: absolute;
+  top: 270px;
+  left: 0;
+  background-color: #FF4947;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 3px 13px;
+  border-radius: 2px;
+}
+
+.sellingPrice{
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.listPrice{
+  display: flex;
+  align-items: end;
+  font-size: 16px;
+  color: #FF4947;
+}
+
+.savings--summarySavings{
+  top: 290px;
+}
+
+.sellingPriceValue--summaryPrice{
+  font-size: 28px;
+  color: #FF4947;
+}
+
+.listPriceValue--summary{
+  font-size: 14px;
+  color: #555555;
+}
+

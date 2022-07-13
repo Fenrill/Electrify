@@ -54,7 +54,7 @@
 }
 
 .flexCol--filterCol {
-  max-width: 500px;
+  max-width: 250px;
   min-width: 230px;
 }
 
@@ -92,3 +92,380 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+/* Custom Header CSS */
+.flexRow--main-header{
+  background-color: #EBEBEB;
+  box-shadow: 0 4px 5px rgb(0 0 0 / 10%);
+}
+
+.flexRowContent--main-header{
+  box-shadow: none!important;
+}
+
+.flexRowContent--menu-link :global(.vtex-store-components-3-x-searchBarContainer){
+  max-width: 900px;
+}
+
+.flexRow--top-header-sales, .flexRowContent--top-header-sales{
+  background-color: #131246;
+  height: 43px;
+}
+
+.flexRowContent--menu-link{
+  background-color: #FFFFFF;
+  justify-content: space-between;
+}
+
+.flexCol--header-login-cart{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColChild--header-login-cart{
+  align-self: center;
+}
+
+.flexCol--header-login-cart :first-child{
+  height: fit-content!important;
+}
+
+.flexRow--announce-header{
+  background-color: #1E4BA8;
+}
+
+.flexRowContent--main-header{
+  height: 60px;
+  background-color: transparent;
+}
+
+.flexRow--shelf-title-container{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.flexRow--tabLayoutMain{
+  position: relative;
+}
+
+.flexRow--container-brand-1{
+  background-color: #59595B;
+  margin-top: 90px;
+}
+
+.flexRow--shelf-brand-1{
+  background-color: #BBBCBF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.flexCol--footer-logo-desktop :global(.vtex-store-components-3-x-logoContainer){
+  padding: 0;
+}
+
+.flexRowContent--menu-row{
+  padding-top: 60px!important;
+  padding-bottom: 60px!important;
+}
+
+.flexRowContent--menu-row :global(.vtex-menu-2-x-styledLinkContainer){
+  padding: 0;
+  margin: 5px 0;
+}
+
+.flexRowContent--menu-row :global(.vtex-menu-2-x-styledLinkContent){
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.flexRow--payment-methods{
+  background-color: #FFFFFF;
+}
+
+.flexRowContent--payment-methods{
+  border-top: 1px solid #FFFFFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #ADADAD;
+}
+
+.flexRow--credits{
+  background-color: #FFFFFF;
+  padding: 30px 0;
+}
+
+.flexCol--credits-1{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColChild--credits-2{
+  text-align: right;
+}
+
+.flexRow--container-brand-2{
+  background-color: #FED931;
+  padding-top: 30px;
+}
+
+.flexRow--shelf-brand-2{
+  background-color: #FED9318D;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.flexRow--container-brand-3{
+  background-color: #191518;
+  padding-top: 30px;
+}
+
+.flexRow--shelf-brand-3{
+  background-color: #BBBCBF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.flexRow--container-brand-4{
+  background-color: #D1711C;
+  padding-top: 30px;
+}
+
+.flexRow--shelf-brand-4{
+  background-color: #DF9C61;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.flexRow--container-brand-5{
+  background-color: #3DCD58;
+  padding-top: 30px;
+}
+
+.flexRow--shelf-brand-5{
+  background-color: #78DC8B;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.flexRow--banner-1{
+  margin-bottom: 100px;
+}
+
+.flexCol--metodos-pago{
+  padding-left: 20px;
+}
+
+.flexCol--metodos-pago, .flexCol--metodos-pago-imagenes, .flexColChild--metodos-pago-imagenes,
+.flexCol--redes-sociales{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol--redes-sociales{
+  justify-content: end;
+}
+
+.flexColChild--metodos-pago-imagenes, .flexColChild--redes-sociales{
+  margin-right: 30px;
+}
+
+.flexCol--credits-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.flexColChild--credits-2{
+  margin-right: 30px;
+}
+
+.flexRow--orderByAndSwitcher{
+  display: none;
+}
+
+.flexRowContent--announce-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexCol--announce-header-images, .flexCol--announce-header-text{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColChild--announce-header-button :global(.vtex-store-link-0-x-link){
+  background-color: #FDBF00!important;
+  border-radius: 38px;
+}
+
+.flexColChild--announce-header-button :global(.vtex-store-link-0-x-link):hover{
+  background-color: #FDBF00!important;
+  border-color: none!important;
+}
+
+.flexColChild--announce-header-button :global(.vtex-store-link-0-x-label){
+  color: #000000;
+  transition: color 150ms ease-in;
+}
+
+.flexColChild--announce-header-button :global(.vtex-store-link-0-x-label):hover{
+  color: #FFFFFF;
+}
+
+.flexColChild--announce-header-images{
+  margin-right: 20px;
+}
+
+.flexCol--announce-header-text{
+  justify-content: center;
+}
+
+.flexCol--announce-header-button{
+  text-align: center;
+}
+
+.flexRowContent--buy-button :global(.vtex-button){
+  background-color: #FDBF00!important;
+  border: #FDBF00!important;
+  max-width: 420px;
+}
+
+.flexRowContent--buy-button :global(.vtex-add-to-cart-button-0-x-buttonText){
+  color: #000000!important;
+}
+
+.flexRowContent--buy-button :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  justify-content: left;
+}
+
+/* PDP */
+.flexCol--product-right-col{
+  position: relative;
+}
+
+.flexRowContent--price-row{
+  align-items: end;
+}
+
+.flexRowContent--price-row :global(.vtex-product-price-1-x-sellingPriceValue){
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.flexCol--product-right-col :global(.vtex-product-price-1-x-savings){
+  font-size: 21px;
+  top: inherit;
+  left: inherit;
+  height: fit-content;
+  position: relative;
+}
+
+.flexCol--product-right-col :global(.vtex-store-components-3-x-productBrand){
+  font-size: 33px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.flexCol--product-right-col :global(.vtex-product-price-1-x-listPrice){
+  font-size: 22px;
+}
+
+.flexCol--product-right-col :global(.vtex-store-components-3-x-productBrandNameLink){
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.flexRow--product-spacer{
+  margin-bottom: 10px;
+}
+
+.flexRow--breadcrumb{
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.flexColChild--product-right-col :global(.vtex-wish-list-1-x-wishlistIconContainer){
+  position: relative;
+  top: inherit;
+  right: inherit;
+  text-align: right;
+}
+
+.flexColChild--product-right-col :global(.vtex-wish-list-1-x-wishlistIcon--wish-list-btn)::before{
+  display:inline-block;
+  content: 'Favoritos';
+  font-size: 16px;
+  top: 8px;
+  right: 55px;
+  position: absolute;
+}
+
+.flexRow--cambios-devoluciones{
+  margin-bottom: 50px;
+}
+
+.flexRow--cambios-square1, .flexRow--cambios-square2{
+  max-width: 1350px;
+  min-width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 26px;
+  border: 1px solid #707070;
+}
+
+.flexRow--cambios-square2{
+  margin-top: 60px;
+}
+
+.flexRowContent--cambios-square1{
+  align-items: center;
+}
+
+.flexColChild--metodos-cards-square1, .flexCol--metodos-cards-square2{
+  border: 1px solid #707070;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 100px;
+  height: 270px;
+}
+
+.flexCol--metodos-cards-square2{
+  padding: 40px;
+}
+
+.flexRowContent--metodos{
+  margin-bottom: 50px!important;
+}
+
+.flexRow--summaryIluminacionledSavings{
+  position: relative;
+}
+
+@media screen and (max-width: 1440px){
+  .flexRowContent--menu-link :global(.vtex-input-prefix__group){
+    width: 400px;
+    height: 44px;
+  }
+}
+
+/* Custom Desktop Sizes */
+@media screen and (min-width: 1441px){
+  .flexRowContent--menu-link :global(.vtex-input-prefix__group){
+    width: 900px;
+    height: 44px;
+  }
+
+  .flexRowContent{
+    max-width: 1720px;
+    margin: 0 auto;
+  }
+}
+

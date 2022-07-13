@@ -11,12 +11,11 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
+      "flex-layout.col#footer-logo-desktop",
+      "vtex.menu@2.x:menu#categorias",
       "vtex.menu@2.x:menu#footer-clothing",
       "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#qr-wa"
     ],
     "props": {
       "blockClass": "menu-row",
@@ -24,6 +23,63 @@
       "paddingBottom": 3
     }
   },
+  "flex-layout.col#footer-logo-desktop":{
+    "props": {
+      "blockClass": "footer-logo-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": ["logo#footer-logo-desktop", "vtex.menu@2.x:menu#Products"]
+  },
+  "logo#footer-logo-desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/brand/electrify-footer.png",
+      "width": "240",
+      "blockClass":"footer-brand-image"
+    }
+  },
+  "flex-layout.col#qr-wa":{
+    "props":{"blockClass":"qr-wa"},
+    "children":[
+      "rich-text#title4",
+      "rich-text#horarios",
+      "rich-text#email",
+      "image#wa",
+      "image#qr"
+    ]
+  },
+  "rich-text#title4":{
+    "props": {
+      "text": "CONTÁCTANOS",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#horarios":{
+    "props": {
+      "text": "Lunes a Viernes\n9:00am a 7:00pm",
+      "blockClass": "footer-horarios"
+    }
+  },
+  "rich-text#email":{
+    "props": {
+      "text": "contacto@electrify.mx",
+      "blockClass": "footer-email"
+    }
+  },
+  "image#wa": {
+    "props": {
+      "src": "assets/logos/whatsapp.png",
+      "maxHeight": 25
+    }
+  },
+  "image#qr": {
+    "props": {
+      "src": "assets/logos/qr.png",
+      "maxHeight": 110
+    }
+  },
+
 
   "social-networks": {
     "props": {
@@ -49,27 +105,144 @@
   },
 
   "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+    "children": ["flex-layout.col#accepted-payment-methods", "flex-layout.col#redes-sociales"],
     "props": {
       "blockClass": "payment-methods"
     }
   },
-  "accepted-payment-methods": {
+  "flex-layout.col#accepted-payment-methods":{
+    "children": ["flex-layout.col#payment-icons"],
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "blockClass": "metodos-pago"
+    }
+  },
+  "rich-text#metodos-pago": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "MÉTODOS DE PAGO",
+      "blockClass": "metodos-pago-text"
+    }
+  },
+  "flex-layout.col#payment-icons": {
+    "children": [
+      "image#master-card",
+      "image#visa",
+      "image#aexpress",
+      "image#spei"
+    ],
+    "props": {
+      "blockClass": "metodos-pago-imagenes"
+    }
+  },
+  "image#master-card":{
+    "props": {
+      "src": "assets/icons/mastercard-whitebg.svg"
+    }
+  },
+  "image#aexpress":{
+    "props": {
+      "src": "assets/icons/aexpress.svg"
+    }
+  },
+  "image#visa":{
+    "props": {
+      "src": "assets/icons/VISA.svg"
+    }
+  },
+  "image#spei":{
+    "props": {
+      "src": "assets/icons/spei-whitebg.svg"
+    }
+  },
+  "flex-layout.col#redes-sociales":{
+    "children": ["flex-layout.col#redes-sociales-icons"],
+    "props": {
+      "blockClass": "redes-sociales"
+    }
+  },
+  "rich-text#redes-sociales": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "SíGUENOS EN",
+      "blockClass": "redes-sociales-text"
+    }
+  },
+  "flex-layout.col#redes-sociales-icons":{
+    "children": [
+      "image#lindin",
+      "image#twitter",
+      "image#instagram",
+      "image#youtube"
+    ],
+    "props": {
+      "blockClass": "metodos-pago-imagenes"
+    }
+  },
+  "image#lindin":{
+    "props": {
+      "src": "assets/icons/linedin-blue.svg"
+    }
+  },
+  "image#twitter":{
+    "props": {
+      "src": "assets/icons/twitter-blue.svg"
+    }
+  },
+  "image#instagram":{
+    "props": {
+      "src": "assets/icons/instagram-blue.svg"
+    }
+  },
+  "image#youtube":{
+    "props": {
+      "src": "assets/icons/youtube-blue.svg"
     }
   },
 
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+    "children": ["flex-layout.col#footer-desktop-1", "flex-layout.col#footer-desktop-2"],
     "props": {
       "blockClass": "credits"
     }
   },
+  "flex-layout.col#footer-desktop-1":{
+    "props":{"blockClass":"credits-1"},
+    "children":["image#logo-ad","rich-text#footer"]
+  },
+  "image#logo-ad":{
+    "props": {
+      "src": "assets/logos/ad_mexico.png",
+      "maxHeight": 48
+    }
+  },
   "rich-text#footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "©2022 Power by Affiliated Distributors. Todos los derechos reservados.",
       "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#footer-desktop-2":{
+    "props":{"blockClass":"credits-2"},
+    "children":["image#logo-stripe", "image#sello-logo"]
+  },
+  "rich-text#pago-asegurado": {
+    "props": {
+      "text": "PAGO ASEGURADO POR",
+      "blockClass": "pago-asegurado"
+    }
+  },
+  "image#logo-stripe":{
+    "props": {
+      "src": "assets/icons/stripe.svg",
+      "maxHeight": 48
+    }
+  },
+  "image#sello-logo":{
+    "props": {
+      "src": "assets/icons/sello_logo.svg",
+      "maxHeight": 48
     }
   },
 

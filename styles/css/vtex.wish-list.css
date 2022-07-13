@@ -1,0 +1,23 @@
+.wishlistIconContainer{
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+.wishlistIconContainer:hover :global(.vtex-button), .wishlistIconContainer :global(.vtex-button):focus{
+    background-color: transparent!important;
+}
+
+.outline{
+    background: url('assets/icons/empty-heart.svg');
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+.fill, .outline:hover{
+    background: url('assets/icons/filled-heart.svg');
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}

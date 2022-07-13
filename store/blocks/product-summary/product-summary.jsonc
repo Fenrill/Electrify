@@ -2,13 +2,12 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
+      "vtex.store-components:product-brand",
       "product-summary-name",
-      "flex-layout.col#productRating",
+      // "flex-layout.col#productRating",
       "product-summary-space",
-      "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      "product-installments#summary"
     ]
   },
   "flex-layout.col#productRating": {
@@ -20,9 +19,10 @@
 
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "product-summary-image#shelf"
+      // "vtex.product-highlights@2.x:product-highlights#collection",
+      // "vtex.product-highlights@2.x:product-highlights#collectionPromotions",
+      // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
 
@@ -42,11 +42,28 @@
   },
   "product-highlight-wrapper": {
     "props": {
-      "blockClass": "collection"
+      "blockClass": "collectionPDP"
     },
     "children": ["product-highlight-text"]
   },
   "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#collectionPromotions": {
+    "props": {
+      "type": "promotion"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper#collectionPromotions": {
+    "props": {
+      "blockClass": "promotionPDP"
+    },
+    "children": ["product-highlight-text#collectionPromotions"]
+  },
+  "product-highlight-text#collectionPromotions": {
     "props": {
       "message": "{highlightName}"
     }
@@ -57,6 +74,7 @@
       "blockClass": "summary"
     }
   },
+
   "flex-layout.row#selling-price-savings": {
     "props": {
       "colGap": 2,
@@ -66,6 +84,7 @@
     },
     "children": [
       "product-selling-price#summary",
+      "product-list-price#summary",
       "product-price-savings#summary"
     ]
   },
@@ -76,7 +95,7 @@
   },
   "product-selling-price#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "summaryPrice"
     }
   },
   "product-price-savings#summary": {
@@ -84,7 +103,7 @@
       "markers": [
         "discount"
       ],
-      "blockClass": "summary"
+      "blockClass": "summarySavings"
     }
   }
 }

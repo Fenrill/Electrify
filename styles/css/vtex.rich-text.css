@@ -2,6 +2,8 @@
   color: #ffffff;
   text-align: center;
   justify-content: center;
+  padding: 0px 10px;
+  height: 180px;
 }
 
 .container--shelfTitle {
@@ -87,4 +89,134 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+/* Custom Header CSS */
+.wrapper--top-header-sales{
+  color: #FDBF00;
+}
+
+.strong--announce-header{
+  color: #FFFFFF;
+}
+
+.container--announce-header{
+  padding-left: 30px;
+}
+
+.container--shelfTitle{
+  justify-content: left;
+  text-align: left;
+}
+
+.heading--shelfTitle{
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.paragraph--footerTitle{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0;
+  padding-bottom: 20px;
+  margin: 10px 0;
+}
+
+.paragraph--footer{
+  color: #000000;
+  font-size: 14px;
+}
+
+.heading--deals{
+  color: #045DB5;
+}
+
+.paragraph--deals{
+  color: #000000;
+}
+
+.paragraph--metodos-pago-text, .paragraph--redes-sociales-text{
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.paragraph--pago-asegurado{
+  font-size: 12px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.paragraph--announce-header-1, .paragraph--announce-header-2, .paragraph--announce-header-3{
+  color: #FFFFFF;
+  font-size: 17px;
+}
+
+.heading--lo-mas-buscado-text-1, .heading--lo-mas-vendido-text-1{
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.heading-level-5{
+  font-size: 32px;
+  font-weight: 700;
+  color: #131246;
+}
+
+.heading--privacidad-title{
+  color: #000000;
+}
+
+.container--phone-icon-text, .container--mail-icon-text{
+  border: 1px solid #1E4BA8;
+  padding: 0 60px;
+  margin-left: 50px;
+  color: #1E4BA8;
+  position: relative;
+}
+
+.paragraph--phone-icon-text{
+  line-height: 0.7;
+}
+
+.container--phone-icon-text::after{
+  content: url('assets/icons/phone.svg');
+  position: absolute;
+  width: 24px;
+  top: 10px;
+  left: 20px;
+}
+
+.container--mail-icon-text::after{
+  content: url('assets/icons/mail.svg');
+  position: absolute;
+  width: 24px;
+  top: 10px;
+  left: 20px;
+}
+
+
+.wrapper--cambios-texto-card-title :global(.vtex-rich-text-0-x-heading), .wrapper--entrega-title :global(.vtex-rich-text-0-x-heading){
+  margin: 0;
+  font-size: 20px;
+}
+
+.wrapper--cambios-texto-card-title :global(.vtex-rich-text-0-x-paragraph){
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.paragraph--footer-horarios{
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.link--footer-email{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
 }

@@ -8,31 +8,29 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#3-desktop",
+      "flex-layout.row#3-desktop"
+      // "flex-layout.row#4-desktop"
     ]
   },
 
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+    "children": ["rich-text#top-header"],
     "props": {
-      "fullWidth": true
+      "fullWidth": "true",
+      "blockClass":"top-header-sales"
     }
   },
 
+  "rich-text#top-header": {
+    "props": {
+      "blockClass":"top-header-sales",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Envío **GRATIS** en compras mayores a $5,000!"
+    }
+  },
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
-  "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
       "horizontalAlign": "center",
@@ -41,23 +39,38 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "flex-layout.col#header-login-cart"
     ]
+  },
+  "flex-layout.col#header-login-cart":{
+    "props":{
+      "blockClass":"header-login-cart"
+    },
+    "children":[
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "login": {
+    "props": {
+      "showIconProfile":true,
+      "iconLabel":"Mi Cuenta"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  "sticky-layout#4-desktop": {
+  "sticky-layout#3-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["flex-layout.row#2-desktop"]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -67,15 +80,89 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#spacer"
     ]
   },
+  "flex-layout.row#4-desktop":{
+    "children": [
+      "flex-layout.col#announcements-header-images",
+      "flex-layout.col#announcements-header-text",
+      "flex-layout.col#announcements-header-button"
+    ],
+    "props": {
+      "fullWidth": "true",
+      "blockClass":"announce-header"
+    }
+  },
+  "flex-layout.col#announcements-header-images":{
+    "children": ["image#hotsale", "image#hotsale-icons"],
+    "props": {
+      "blockClass":"announce-header-images"
+    }
+  },
+  "image#hotsale":{
+    "props": {
+      "src": "assets/icons/hot-sale.png",
+      "maxHeight":50
+    }
+  },
+  "image#hotsale-icons":{
+    "props": {
+      "src": "assets/icons/hot-sale-icons.png",
+      "maxHeight":40
+    }
+  },
+  "flex-layout.col#announcements-header-text":{
+    "children": [
+      // "rich-text#announce-header-1",
+      "rich-text#announce-header-2"
+      // "rich-text#announce-header-3"
+    ],
+    "props": {
+      "blockClass":"announce-header-text"
+    }
+  },
+  "rich-text#announce-header-1":{
+    "props": {
+      "blockClass":"announce-header-1",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Del 23 al 31 de mayo"
+    }
+  },
+  "rich-text#announce-header-2":{
+    "props": {
+      "blockClass":"announce-header-2",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Hasta 55% de descuento + 24 Meses Sin Intereses"
+    }
+  },
+  "rich-text#announce-header-3":{
+    "props": {
+      "blockClass":"announce-header-3",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Consultas Marcas participaciones"
+    }
+  },
+  "flex-layout.col#announcements-header-button":{
+    "children": [
+      "link#hotsale"
+    ],
+    "props": {
+      "blockClass":"announce-header-button"
+    }
+  },
+  "link#hotsale": {
+    "props": {
+      "displayMode": "button",
+      "href": "/",
+      "label": "Ver Promociones"
+    }
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -86,14 +173,14 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["category-menu"]
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "assets/brand/electrify.png",
+      "width": "240"
     }
   },
   "header-layout.mobile": {
@@ -123,9 +210,11 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
+      // "vtex.menu@2.x:menu#category-menu",
+      // "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "category-menu"
     ],
     "props": {
       "orientation": "vertical"

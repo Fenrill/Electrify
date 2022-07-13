@@ -1,4 +1,125 @@
 {
+  "vtex.menu@2.x:menu#categorias":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title1",
+      "menu-item#illuminacion",
+      "menu-item#herramientas",
+      "menu-item#cables",
+      "menu-item#artefactos",
+      "menu-item#distribucion",
+      "menu-item#automatizacion",
+      "menu-item#energia"
+    ]
+  },
+  "menu-item#illuminacion": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/iluminacion",
+        "noFollow": false,
+        "tagTitle": "Iluminacion",
+        "text": "Iluminacion"
+      }
+    }
+  },
+  "menu-item#herramientas": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/herramientas",
+        "noFollow": false,
+        "tagTitle": "Herramientas",
+        "text": "Herramientas"
+      }
+    }
+  },
+  "menu-item#cables": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cables",
+        "noFollow": false,
+        "tagTitle": "Cables",
+        "text": "Cables"
+      }
+    }
+  },
+  "menu-item#artefactos": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "componentes-electricos",
+        "noFollow": false,
+        "tagTitle": "Artefactos Eléctricos",
+        "text": "Artefactos Eléctricos"
+      }
+    }
+  },
+  "menu-item#distribucion": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/distribucion",
+        "noFollow": false,
+        "tagTitle": "Distribución y Control",
+        "text": "Distribución y Control"
+      }
+    }
+  },
+  "menu-item#automatizacion": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/automatizacion-y-control",
+        "noFollow": false,
+        "tagTitle": "Automatización",
+        "text": "Automatización"
+      }
+    }
+  },
+  "menu-item#energia": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/energia",
+        "noFollow": false,
+        "tagTitle": "Energía",
+        "text": "Energía"
+      }
+    }
+  },
+
   "vtex.menu@2.x:menu#Products": {
     "props": {
       "orientation": "vertical"
@@ -10,6 +131,12 @@
       "menu-item#personalization"
     ]
   },
+  "rich-text#title1":{
+    "props": {
+      "text": "CATEGORÍAS",
+      "blockClass": "footerTitle"
+    }
+  },
   "menu-item#news": {
     "props": {
       "id": "menu-item-news",
@@ -18,10 +145,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/about-us",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Acerca de Electrify®",
+        "text": "Acerca de Electrify®"
       }
     }
   },
@@ -33,10 +160,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/pages/faq",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Preguntas frecuentes",
+        "text": "Preguntas frecuentes"
       }
     }
   },
@@ -48,10 +175,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/pages/condiciones",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Términos & Condiciones",
+        "text": "Términos & Condiciones"
       }
     }
   },
@@ -63,10 +190,233 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/pages/privacidad",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Política de Privacidad",
+        "text": "Política de Privacidad"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title2",
+      "menu-item#panduit",
+      "menu-item#klein",
+      "menu-item#kobrex",
+      "menu-item#millwaukee",
+      "menu-item#beghuelli",
+      "menu-item#supra",
+      "menu-item#estevez"
+    ]
+  },
+  "rich-text#title2":{
+    "props": {
+      "text": "FABRICANTES",
+      "blockClass": "footerTitle"
+    }
+  },
+  "menu-item#panduit": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/panduit/b",
+        "noFollow": true,
+        "tagTitle": "Panduit",
+        "text": "Panduit"
+      }
+    }
+  },
+  "menu-item#klein": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/klein/b",
+        "noFollow": true,
+        "tagTitle": "Klein Tools",
+        "text": "Klein Tools"
+      }
+    }
+  },
+  "menu-item#kobrex": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/kobrex/b",
+        "noFollow": true,
+        "tagTitle": "Kobrex",
+        "text": "Kobrex"
+      }
+    }
+  },
+  "menu-item#millwaukee": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/milwaukee/b",
+        "noFollow": true,
+        "tagTitle": "Milwaukee",
+        "text": "Milwaukee"
+      }
+    }
+  },
+  "menu-item#beghuelli": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/beghuelli/b",
+        "noFollow": true,
+        "tagTitle": "Beghuelli",
+        "text": "Beghuelli"
+      }
+    }
+  },
+  "menu-item#supra": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/supra/b",
+        "noFollow": true,
+        "tagTitle": "Supra",
+        "text": "Supra"
+      }
+    }
+  },
+  "menu-item#estevez": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/estevez/b",
+        "noFollow": true,
+        "tagTitle": "Estevez",
+        "text": "Estevez"
+      }
+    }
+  },
+
+  "menu-item#clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
+
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shorts",
+        "noFollow": false,
+        "tagTitle": "Promociones",
+        "text": "Promociones"
+      }
+    }
+  },
+
+  "menu-item#tank-tops": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Trabaja con nosotros",
+        "text": "Trabaja con nosotros"
+      }
+    }
+  },
+
+  "menu-item#shirts": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Ventas corporativas",
+        "text": "Ventas corporativas"
+      }
+    }
+  },
+
+  "menu-item#sweatshirt": {
+    "props": {
+      "id": "menu-item-sweat-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/sweatshirt",
+        "noFollow": false,
+        "tagTitle": "Sweatshirt",
+        "text": "Sweatshirt"
+      }
+    }
+  },
+
+  "menu-item#cropped": {
+    "props": {
+      "id": "menu-item-cropped",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/cropped",
+        "noFollow": false,
+        "tagTitle": "Cropped",
+        "text": "Cropped"
       }
     }
   },
@@ -76,10 +426,18 @@
       "orientation": "vertical"
     },
     "children": [
+      "rich-text#title3",
       "menu-item#smartphones",
       "menu-item#videogames",
-      "menu-item#tvs"
+      "menu-item#tvs",
+      "menu-item#blog"
     ]
+  },
+  "rich-text#title3":{
+    "props": {
+      "text": "CENTRO DE AYUDA",
+      "blockClass": "footerTitle"
+    }
   },
 
   "menu-item#smartphones": {
@@ -92,8 +450,8 @@
         "type": "internal",
         "href": "/decoration/smartphones",
         "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "tagTitle": "Facturación",
+        "text": "Facturación"
       }
     }
   },
@@ -108,8 +466,8 @@
         "type": "internal",
         "href": "/decoration/videogames",
         "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
+        "tagTitle": "Centro de Ayuda",
+        "text": "Centro de Ayuda"
       }
     }
   },
@@ -124,83 +482,26 @@
         "type": "internal",
         "href": "/decoration/tvs",
         "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
+        "tagTitle": "Promociones",
+        "text": "Promociones"
       }
     }
   },
 
-  "vtex.menu@2.x:menu#footer-bags": {
+  "menu-item#blog": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
-
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
+      "id": "menu-item-tvs",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/d",
+        "href": "/decoration/blog",
         "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
+        "tagTitle": "Blog",
+        "text": "Blog"
       }
     }
-  },
-
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
   },
 
   "vtex.menu@2.x:menu#footer-mobile": {
@@ -245,7 +546,8 @@
       "menu-item#sweatshirt",
       "menu-item#cropped"
     ]
-  },
+  },  
+
 
   "menu-item#decoration-mobile": {
     "props": {
@@ -293,101 +595,5 @@
       "menu-item#videogames",
       "menu-item#tvs"
     ]
-  },
-
-  "menu-item#clothing": {
-    "props": {
-      "id": "menu-item-category-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-
-  "menu-item#shorts": {
-    "props": {
-      "id": "menu-item-shorts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shorts",
-        "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
-      }
-    }
-  },
-
-  "menu-item#tank-tops": {
-    "props": {
-      "id": "menu-item-tank-tops",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/tank-tops",
-        "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
-      }
-    }
-  },
-
-  "menu-item#shirts": {
-    "props": {
-      "id": "menu-item-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
-  },
-
-  "menu-item#sweatshirt": {
-    "props": {
-      "id": "menu-item-sweat-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/sweatshirt",
-        "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
-      }
-    }
-  },
-
-  "menu-item#cropped": {
-    "props": {
-      "id": "menu-item-cropped",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/cropped",
-        "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
-      }
-    }
   }
 }

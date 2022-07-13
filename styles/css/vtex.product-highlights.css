@@ -6,7 +6,17 @@
 }
 
 .productHighlightText {
-  background: antiquewhite;
-  border-radius: 20px;
-  padding: 5px 10px;
+  background: #FF4947;
+  color: #FFFFFF;
+  font-size: 12px;
+  border-radius: 2px;
+  padding: 3px 13px;
+  position: absolute;
+  top: 270px;
+  left: 55px;
 }
+
+.productHighlightWrapper--collectionPDP :global(.vtex-product-highlights-2-x-productHighlightText){
+  top: 282px;
+}
+

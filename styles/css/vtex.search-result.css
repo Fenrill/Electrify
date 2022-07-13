@@ -20,3 +20,17 @@
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }
+
+.searchResultContainer{
+  margin-bottom: 100px;
+}
+
+.gallery--grid :global(.vtex-search-result-3-x-galleryItem){
+  border: 1px solid transparent;
+  transition: border 500ms ease-in;
+  border-radius: 10px;
+}
+
+.gallery--grid :global(.vtex-search-result-3-x-galleryItem):hover{
+  border: 1px solid #bfbfbf;
+}
